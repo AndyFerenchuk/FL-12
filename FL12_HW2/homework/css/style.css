@@ -53,11 +53,24 @@
 .tm-banner {
     background: linear-gradient(90deg, lightskyblue, burlywood);
 }
+
 .tm-banner-inner {
     background: #fff;
-    
+    text-shadow: 3px 3px 3px #333;
 }
 
+@keyframes moving{
+    from{
+        margin-left:200px;
+    }
+    to{
+        margin-left:0px;
+    }
+}
+
+.tm-banner-text{
+    animation: moving 3s infinite ease-in-out;
+}
 
 
 
@@ -69,22 +82,6 @@
 /*
 
 
-.tm-banner-inner{
-    background:#fff;
-    text-shadow: 5px 5px 3px #333;
-}
-@keyframes move{
-    from{
-        margin-left:400px;
-    }
-    to{
-        margin-right:0px;
-    }
-
-}
-.tm-banner-text{
-    animation: move 4s ease-out;
-}
 .flex-2-col .padding-medium {
     margin: auto;
 }
