@@ -116,12 +116,6 @@ div.padding-medium.flex-item.tm-team-description-container {
 .tm-team-description-container h2 {
     text-align: left;
 }
-
-
-/*
-
-
-
 .box-work:nth-child(odd){
     background-color: lightskyblue;
     color: #FFF;
@@ -135,6 +129,10 @@ div.padding-medium.flex-item.tm-team-description-container {
 .box-work{
     padding: 10px 10px;
 }
+
+/*
+
+
 p.tm-section-description{
     text-indent: 25px;
     line-height: 30px;
