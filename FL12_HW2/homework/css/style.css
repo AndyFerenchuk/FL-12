@@ -89,34 +89,32 @@ div.padding-medium.flex-item.tm-team-description-container {
     font-style: italic;
 }
 
+.heading  h2{
+    text-align: center;
+    color: lightskyblue;
+}
+
+.heading.tm-content-box ol{
+    list-style-type: lower-alpha;
+}
+.heading.tm-content-box ol li:hover::before {
+    content: ">";
+}
+.heading.tm-content-box ol li:nth-child(1)::after, .heading.tm-content-box ol li:nth-child(3)::after {
+    content: "New";
+    color: red;
+    font-weight: bold;
+    vertical-align: super;
+    font-variant: small-caps;
+    font-size: 10px;
+}
+
 
 
 
 /*
 
 
-.heading  h2{
-    text-align: center;
-    color: lightskyblue;
-}
-
-.heading ol{
-    list-style-type: lower-alpha;
-}
-
-.heading li:hover::before{
-    content: ">";
-}
-.heading li:nth-child(1)::after,
-.heading li:nth-child(3)::after{
-    content: "New";
-    color: #FF0000;
-    font-variant: small-caps;
-    font-weight: bold;
-    vertical-align: super;
-    font-size: 0.8em;
-    text-decoration: none;
-}
 .blocks p:nth-child(3){
     font-style: italic;
     word-spacing: 10px;
