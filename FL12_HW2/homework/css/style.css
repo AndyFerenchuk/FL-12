@@ -108,18 +108,20 @@ div.padding-medium.flex-item.tm-team-description-container {
     font-variant: small-caps;
     font-size: 10px;
 }
-
-
+.tm-team-description-container p:last-child {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+}
+.tm-team-description-container h2 {
+    text-align: left;
+}
 
 
 /*
 
 
-.blocks p:nth-child(3){
-    font-style: italic;
-    word-spacing: 10px;
-    letter-spacing: 5px;
-}
+
 .box-work:nth-child(odd){
     background-color: lightskyblue;
     color: #FFF;
