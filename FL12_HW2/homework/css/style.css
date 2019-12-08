@@ -71,16 +71,23 @@
 .tm-banner-text{
     animation: moving 3s infinite ease-in-out;
 }
+
 div.tm-content-box.flex-2-col {
     display: flex;
     justify-content: space-between;
 }
+
 div.padding-medium.flex-item.tm-team-description-container {
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
 }
 
+.box-bg:hover{
+    background: lightgrey;
+    color: lightskyblue;
+    font-style: italic;
+}
 
 
 
@@ -88,25 +95,11 @@ div.padding-medium.flex-item.tm-team-description-container {
 /*
 
 
-.flex-2-col .padding-medium {
-    margin: auto;
-}
-.flex-2-col{
-    display: flex;
-    justify-content: space-between;
-}
-.flex-2-col h2{
-    text-align: center;
-}
-.box-bg:hover{
-    background: lightgrey;
-    color: lightskyblue;
-    font-style: italic;
-}
 .heading  h2{
     text-align: center;
     color: lightskyblue;
 }
+
 .heading ol{
     list-style-type: lower-alpha;
 }
