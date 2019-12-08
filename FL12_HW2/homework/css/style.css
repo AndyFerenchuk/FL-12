@@ -45,19 +45,30 @@
 }
 
 
+.tm-nav-item-link:hover {
+        background-color: lightskyblue;
+        color: #fff;
+}
+
+.tm-banner {
+    background: linear-gradient(90deg, lightskyblue, burlywood);
+}
+.tm-banner-inner {
+    background: #fff;
+    
+}
+
+
+
+
 
 
 
 
 
 /*
-.tm-nav-item-link:hover{
-    background-color: lightskyblue;
-    color: #fff;
-}
-.tm-banner{
-    background:linear-gradient(to right, lightskyblue,burlywood);
-}
+
+
 .tm-banner-inner{
     background:#fff;
     text-shadow: 5px 5px 3px #333;
