@@ -78,11 +78,20 @@ div.tm-content-box.flex-2-col {
 }
 
 div.padding-medium.flex-item.tm-team-description-container {
-    padding-left: 2%;
-    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.padding-medium.flex-item.tm-team-description-container h2 {
     text-align: center;
 }
-
+div.padding-medium.flex-item.tm-team-description-container p {
+    text-align: center;
+}
+body > div > div.tm-main-content > section:nth-child(2) > div.tm-content-box.flex-2-col > div.flex-item.tm-team-img > img {
+    box-sizing: content-box;
+    width: 100%;
+}
 .box-bg:hover{
     background: lightgrey;
     color: lightskyblue;
@@ -108,15 +117,16 @@ div.padding-medium.flex-item.tm-team-description-container {
     font-variant: small-caps;
     font-size: 10px;
 }
-.tm-team-description-container p:last-child {
+section.blocks > div.padding-medium.flex-item.tm-team-description-container > p:nth-child(3) {
     letter-spacing: 5px;
     word-spacing: 10px;
     font-style: italic;
-}
-.tm-team-description-container h2 {
     text-align: left;
 }
-p.tm-section-description {
+body > div > div.tm-main-content > section.blocks > div.padding-medium.flex-item.tm-team-description-container > h2 {
+    text-align: left;
+}
+body > div > div.tm-main-content > section.blocks > div.padding-medium.flex-item.tm-team-description-container > p:nth-child(2) {
     text-align: left;
 }
 .box-work:nth-child(odd){
