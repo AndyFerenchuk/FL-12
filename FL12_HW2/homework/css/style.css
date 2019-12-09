@@ -4,61 +4,49 @@
         display: flex;
         justify-content: center;
         }
-
     *{
         padding: 0 0 !Important;
         margin: 5px auto !Important;
     }
-
     .tm-sidebar,.tm-team-img,
     #about, .blocks .tm-content-box,
     .carousel-indicators, section.tm-content-box:last-of-type {
         display: none;
     }
-
     .tm-team-description-container {
         max-width: 100%;
         text-align: center;
     }
-
     .tm-content-box ol li {
         list-style-type: none;
         width: 50%;
     }
-
     .tm-content-box ol li:nth-child(odd) {
         text-align: right;
     }
-
     h2 {
         text-transform: uppercase;
         text-align: center;
         color: lightskyblue;
         font-weight: 300;
     }
-
     .blocks .tm-team-description-container p:nth-child(3){
         word-spacing: 8px;
         letter-spacing: 3px;
         font-style: italic;
     }
 }
-
-
 .tm-nav-item-link:hover {
         background-color: lightskyblue;
         color: #fff;
 }
-
 .tm-banner {
     background: linear-gradient(90deg, lightskyblue, burlywood);
 }
-
 .tm-banner-inner {
     background: #fff;
     text-shadow: 3px 3px 3px #333;
 }
-
 @keyframes moving{
     from{
         margin-left:200px;
@@ -67,16 +55,13 @@
         margin-left:0px;
     }
 }
-
 .tm-banner-text{
     animation: moving 3s infinite ease-in-out;
 }
-
 div.tm-content-box.flex-2-col {
     display: flex;
     justify-content: space-between;
 }
-
 div.padding-medium.flex-item.tm-team-description-container {
     display: flex;
     flex-direction: column;
@@ -97,12 +82,10 @@ body > div > div.tm-main-content > section:nth-child(2) > div.tm-content-box.fle
     color: lightskyblue;
     font-style: italic;
 }
-
 .heading  h2{
     text-align: center;
     color: lightskyblue;
 }
-
 .heading.tm-content-box ol{
     list-style-type: lower-alpha;
 }
