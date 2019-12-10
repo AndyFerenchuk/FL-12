@@ -6,6 +6,7 @@
     *{
         padding: 0 0 !Important;
         margin: 4px auto !Important;
+        text-indent: 0px !important;
     }
     .tm-sidebar,.tm-team-img,
     #about, .blocks .tm-content-box,
@@ -29,6 +30,9 @@
         color: lightskyblue;
         font-weight: 300;
     }
+    .blocks .tm-team-description-container p:nth-child(2){
+        text-align: center;
+    }
     .blocks .tm-team-description-container p:nth-child(3){
         word-spacing: 8px;
         letter-spacing: 3px;
@@ -42,15 +46,12 @@
         padding-top: 0;
         max-width: 97%;
     }
-    #home > div > div > p {
-        text-align: center;
-        background-color: red;
-    }
     .container {
         padding-left: 0;
         padding-right: 0;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
     }
 }
 .tm-nav-item-link:hover {
