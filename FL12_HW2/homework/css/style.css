@@ -5,7 +5,7 @@
         }
     *{
         padding: 0 0 !Important;
-        margin: 5px auto !Important;
+        margin: 4px auto !Important;
     }
     .tm-sidebar,.tm-team-img,
     #about, .blocks .tm-content-box,
@@ -34,6 +34,24 @@
         letter-spacing: 3px;
         font-style: italic;
     }
+    *:before,*:after{
+        content: " " !Important;
+        border: none  !Important;
+    }
+    .tm-main-content{
+        padding-top: 0;
+        max-width: 97%;
+    }
+    #home > div > div > p {
+        text-align: center;
+        background-color: red;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .tm-nav-item-link:hover {
         background-color: lightskyblue;
@@ -55,7 +73,7 @@
     }
 }
 .tm-banner-text{
-    animation: moving 3s infinite ease-in-out;
+    animation: moving 3s ease-in-out;
 }
 div.tm-content-box.flex-2-col {
     display: flex;
