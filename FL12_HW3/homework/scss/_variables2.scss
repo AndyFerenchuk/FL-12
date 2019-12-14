@@ -1,0 +1,48 @@
+$header-background: no-repeat center url("../img/m-h-night.jpg");
+$text-color: white;
+$highlight: #ff4e33;
+$main-bg: #21232e;
+$button-color: #e3ac00;
+$section-card-bg: #3b3f50;
+$section-banner-bg: linear-gradient(90deg, #dea406, #932d53);
+@mixin buttons {
+  height: 48px;
+  width: 140px;
+  background-color: $button-color;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+}
+@mixin linx-style {
+  font-family: 'Hind', sans-serif;
+  color: white;
+  word-spacing: 1px;
+}
+@mixin paragraph {
+  margin: -1px 16px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 23px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $text-color;
+  span {
+    font-weight: normal;
+    font-size: 8px;
+    text-align: center;
+    margin-top: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $text-color;
+  }
+}
+@mixin header-button-pos() {
+  margin-left: map-get($buttonsPositions, "$footer-btn-left");
+  margin-top: map-get($buttonsPositions, "$footer-btn-top");
+}
+@mixin footer-button-pos() {
+  margin-left: map-get($buttonsPositions, "$header-btn-left");
+  margin-top: map-get($buttonsPositions, "$header-btn-top");
+}
+$buttonsPositions:("$header-btn-top": 60px, "$header-btn-left": 0px, "$footer-btn-top": 47px, "$footer-btn-left": 325px);

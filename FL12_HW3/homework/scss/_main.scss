@@ -1,40 +1,18 @@
-// Write your styles here
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  background-color: $main-bg;
+  z-index: 0;
   .header {
     height: 719px;
-    background: no-repeat center url("../img/m-h-day.jpg");
+    background: $header-background;
     background-size: 100%;
     border-radius: 0 0 778px/282px 0;
     width: 1920px;
     .header-wrap {
       margin: 21px 193px;
-      .landing-logo {
-        display: flex;
-        flex-direction: row;
-        img {
-          width: 43px;
-          height: 43px;
-        }
-        p {
-          margin: -1px 16px;
-          display: flex;
-          flex-direction: column;
-          font-weight: bold;
-          font-size: 23px;
-          font-family: 'Source Sans Pro', sans-serif;
-          span {
-            font-weight: normal;
-            font-size: 8px;
-            text-align: center;
-            margin-top: 3px;
-            font-family: 'Source Sans Pro', sans-serif;
-          }
-        }
-      }
       .header_heading {
         margin-top: 74px;
         margin-bottom: 36px;
@@ -45,14 +23,15 @@ body {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: bolder;
         position: relative;
+        color: $text-color;
       }
       .header_heading:before {
         content: 'awesome';
-        //line-height: 1.2em;
         position: absolute;
         top: 83px;
         line-height: 0.7;
-        background-color: #0ca1c8;
+        background-color: $highlight;
+        color: $text-color;
       }
       .header_text {
         font-family: 'Hind', sans-serif;
@@ -60,24 +39,17 @@ body {
         line-height: 24px;
         white-space: pre-line;
         margin: 0;
+        color: $text-color;
       }
       div {
         button.header_button {
-          margin-top: 60px;
-          height: 48px;
-          width: 140px;
-          background-color: forestgreen;
-          color: white;
-          font-family: 'Hind', sans-serif;
-          font-size: 18px;
-          border: none;
+          @include buttons;
+          @include footer-button-pos;
         }
         a.login {
           margin-left: 150px;
-          font-family: 'Hind', sans-serif;
           font-size: 19px;
-          color: white;
-          word-spacing: 1px;
+          @include linx-style;
         }
       }
     }
@@ -95,10 +67,11 @@ body {
       font-weight: bolder;
       font-size: 41px;
       position: relative;
+      color: $text-color;
     }
     p.section_text:before {
       content: 'adventure';
-      background-color: #0ca1c8;
+      background-color: $highlight;
       position: absolute;
       left: 219px;
     }
@@ -106,8 +79,8 @@ body {
       .section_card {
         display: flex;
         flex-direction: row;
-        //justify-content: space-between;
-        background-color: #1b1e2a;
+        border-radius: 6px;
+        background-color: $section-card-bg;
         color: white;
         margin-bottom: 25px;
         height: 325px;
@@ -115,6 +88,7 @@ body {
           margin: 19px;
           width: 431px;
           display: block;
+          border-radius: 6px;
         }
         .section_card_right_container {
           display: flex;
@@ -124,26 +98,23 @@ body {
           margin-left: 61px;
           .section_card_heading {
             font-family: 'Source Sans Pro', sans-serif;
-            //letter-spacing: 1px;
-            //font-weight: bolder;
             font-size: 26px;
             margin-left: -83px;
             margin-top: 67px;
           }
           .section_card_text {
-            //white-space: pre-line;
             margin-left: 10px;
             margin-top: 13px;
             font-family: 'Hind', sans-serif;
           }
           .section_link {
-            color: white;
+            @include linx-style;
           }
         }
       }
     }
     .section_banner {
-      background: linear-gradient(90deg, #65950e, #2c5adc);
+      background: $section-banner-bg;
       border-radius: 5px;
       width: 1198px;
       height: 143px;
@@ -152,7 +123,6 @@ body {
       display: flex;
       flex-direction: row;
       z-index: 99;
-      //justify-content: space-between;
       .section_banner_text_wrap {
         margin-left: 161px;
         .section_banner_heading {
@@ -162,6 +132,7 @@ body {
           font-size: 30px;
           font-family: 'Source Sans Pro', sans-serif;
           position: relative;
+          color: $text-color;
         }
         .section_banner_heading:before {
           content: "start";
@@ -169,7 +140,7 @@ body {
           position: absolute;
           top: 12px;
           left: 122px;
-          background-color: #0ca1c8;
+          background-color: $highlight;
         }
         .section_banner_text {
           font-family: 'Hind', sans-serif;
@@ -178,15 +149,8 @@ body {
         }
       }
       .section_banner_button {
-        margin-left: 325px;
-        margin-top: 47px;
-        height: 48px;
-        width: 140px;
-        background-color: forestgreen;
-        color: white;
-        font-family: 'Hind', sans-serif;
-        font-size: 18px;
-        border: none;
+        @include buttons;
+        @include header-button-pos;
       }
     }
   }
@@ -195,52 +159,29 @@ body {
     content: '';
     width: 1920px;
     height: 74px;
-    background-color: #21232e;
+    background-color: $section-card-bg;
     bottom: 0;
     left: -402px;
-    z-index: auto;
+    z-index: 98;
   }
   .footer {
     width: 1920px;
-    //padding-bottom: 65px;
     .footer-wrap {
       display: flex;
       flex-direction: row;
-      background-color: #21232e;
+      background-color: $section-card-bg;
       div.footer_logo.landing-logo {
-        display: flex;
-        flex-direction: row;
         margin-left: 193px;
         margin-top: 64px;
-        img {
-          width: 43px;
-          height: 43px;
-          color: white;
-        }
-        p {
-          margin: -1px 16px;
-          display: flex;
-          flex-direction: column;
-          font-weight: bold;
-          font-size: 23px;
-          font-family: 'Source Sans Pro', sans-serif;
-          color: white;
-          span {
-            font-weight: normal;
-            font-size: 8px;
-            text-align: center;
-            margin-top: 3px;
-            font-family: 'Source Sans Pro', sans-serif;
-          }
-        }
+        @extend .landing-logo;
       }
       .footer_text {
         color: white;
-        margin-left: 439px;
         font-family: 'Hind', sans-serif;
         font-size: 14px;
         width: 291px;
         margin-top: 56px;
+        margin-left: 439px;
         line-height: 20px;
         padding-bottom: 58px;
       }
@@ -254,4 +195,15 @@ body {
     }
   }
 }
-
+.landing-logo {
+  display: flex;
+  flex-direction: row;
+  color: $text-color;
+  img {
+    width: 43px;
+    height: 43px;
+  }
+  p {
+    @include paragraph;
+  }
+}
