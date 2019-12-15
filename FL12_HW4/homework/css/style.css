@@ -11,7 +11,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: static; }
+    position: fixed;
+    top: 0;
+    background-color: white; }
     .wrapper .main-header .name {
       width: 50%;
       text-align: center; }
@@ -39,6 +41,7 @@ body {
           color: #C7C486; }
   .wrapper .hero {
     width: 100%;
+    margin-top: 8.7vh;
     height: 91.3vh;
     background: center url("../img/home-bg.jpg") no-repeat;
     background-size: cover;
