@@ -110,4 +110,18 @@ body {
   font-size: 17px;
   margin: 0 auto; }
 
+.ftr {
+  margin-top: 115px;
+  height: 360px;
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .ftr .ftr-container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    justify-content: space-between; }
+
 /*# sourceMappingURL=style.css.map */
