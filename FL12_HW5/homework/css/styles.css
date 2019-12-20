@@ -50,3 +50,15 @@ body {
     margin-top: var(--sandwich-white-stripe--height);
     border-radius: 20%;
 }
+.header-heading>h1{
+    color: white;
+    font-weight: lighter;
+}
+.header-heading>h1>span{
+    color: deeppink;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
