@@ -69,7 +69,7 @@ body{
     margin-top: var(--sandwich-white-stripe--height);
     border-radius: 20%;
 }
-.navigation-header>h2{
+h2{
     color: white;
     font-weight: lighter;
 }
@@ -81,15 +81,15 @@ body{
     text-align: left;
     width: 100%;
 }
-.hero>img{
+img{
     width: 100%;
 }
 .hero-text{
     position: absolute;
     bottom: 0;
     color: white;
-    margin: 0 12% 0 12%;
+    margin: 0 12%;
 }
-.hero-text>h2{
-    font-weight: lighter;
+.post{
+    margin: 0 12%;
 }
