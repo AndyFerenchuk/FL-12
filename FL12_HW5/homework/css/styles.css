@@ -50,11 +50,11 @@ body {
     margin-top: var(--sandwich-white-stripe--height);
     border-radius: 20%;
 }
-.header-heading>h1{
+.navigation-header>h2{
     color: white;
     font-weight: lighter;
 }
-.header-heading>h1>span{
+.navigation-header>h2>span{
     color: deeppink;
 }
 .navigation{
