@@ -78,9 +78,18 @@ body{
 }
 .hero{
     position: relative;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 .hero>img{
     width: 100%;
+}
+.hero-text{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin: 0 12% 0 12%;
+}
+.hero-text>h2{
+    font-weight: lighter;
 }
