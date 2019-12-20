@@ -8,6 +8,7 @@
   --link: #fff;
   --link--hover: #1f52a4;
   --bg-footer-color: #024161;
+    --sandwich-white-stripe--height: calc(100%/7);
 }
 
 body {
@@ -30,3 +31,22 @@ body {
 }
 
 /* Your styles go here */
+.header{
+    background-color: var(--bg-color--header);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sandwich{
+    background-color: var(--bg-color--header);
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+}
+.sandwich-white-stripe{
+    width: 100%;
+    height: var(--sandwich-white-stripe--height);
+    background-color: white;
+    margin-top: var(--sandwich-white-stripe--height);
+    border-radius: 20%;
+}
