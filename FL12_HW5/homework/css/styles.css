@@ -121,3 +121,15 @@ article:nth-of-type(1)>section>.date{
 article:nth-of-type(1) > section > p{
     padding-bottom: 3em;
 }
+.news{
+    color: black;
+}
+aside>article{
+    background-color: white;
+}
+.news>h2{
+    color: black;
+}
+aside>article>section.news>p{
+    padding-bottom: 3%;
+}
