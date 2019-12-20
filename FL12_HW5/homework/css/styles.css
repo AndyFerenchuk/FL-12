@@ -91,5 +91,20 @@ img{
     margin: 0 12%;
 }
 .post{
-    margin: 0 12%;
+    margin: 0 0 0 12%;
+    color: white;
+    position: relative;
+}
+.date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 1%;
+}
+.date>p{
+    margin: 0;
+    font-weight: lighter;
+}
+.post>p{
+    padding-right: 4.5%;
 }
