@@ -179,6 +179,9 @@ footer p{
     .nav{
         display: none;
     }
+    .wrapper{
+        width: 99%;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 1400px) {
     .sandwich{
@@ -240,5 +243,8 @@ footer p{
     }
     article:nth-of-type(even){
         text-align: right;
+    }
+    .wrapper{
+        width: 70%;
     }
 }
