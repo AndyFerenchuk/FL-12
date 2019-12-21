@@ -153,7 +153,15 @@ footer p{
     flex-direction: row;
 }
 .nav>li{
-    margin-right: 10%;
+    padding: 8% 0 8% 0;
+    margin: 0 10% 0 0;
+}
+li{
+
+}
+li:hover {
+    opacity: 50%;
+    background-color: lightskyblue;
 }
 
 @media screen and (max-width: 480px) {
@@ -245,6 +253,24 @@ footer p{
         text-align: right;
     }
     .wrapper{
-        width: 70%;
+        max-width: 1400px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation-header>h2>a>span{
+        color: deeppink;
+    }
+    .navigation-header>h2>a>span{
+        color: deeppink;
+    }
+    a:hover{
+        opacity: 50%;
+    }
+    ul{
+        margin: 0 10%;
     }
 }
