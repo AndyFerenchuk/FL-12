@@ -1,28 +1,31 @@
-let x1, x2;
 let a = prompt("enter a");
 a = parseFloat(a);
-if (isNaN(a) || a === 0) {
-    console.log('invalid input')
-} else {
+const four = 4,
+    two = 2,
+    zero = 0;
+if (isNaN(a) || a === zero) {
+    console.log('invalid input');
+}
+else {
     let b = prompt("enter b");
     b = parseFloat(b);
     if (isNaN(b)) {
-        console.log('invalid input')
+        console.log('invalid input');
     } else {
         let c = prompt("enter c");
         c = parseFloat(c);
         if (isNaN(c)) {
-            console.log('invalid input')
+            console.log('invalid input');
         } else {
-            let d = Math.pow(b, 2)  - 4 * a * c;
-            console.log('d = ' + ' ' + d);
-            if (d < 0) {
+            const d = Math.pow(b, two) - four * a * c;
+            console.log('d = ', d);
+            if (d < zero) {
                 console.log('no solution');
             } else {
-                x1 = (-b + Math.sqrt(d)) / (2 * a);
-                x2 = (-b - Math.sqrt(d)) / (2 * a);
-                console.log('x1 = ' + ' ' + x1);
-                console.log('x2 = ' + ' ' + x2);
+                const x1 = (-b + Math.sqrt(d)) / (two * a),
+                    x2 = (-b - Math.sqrt(d)) / (two * a);
+                console.log('x1 = ', x1);
+                console.log('x2 = ', x2);
             }
         }
     }
